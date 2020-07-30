@@ -65,6 +65,34 @@ services:
     networks:
       dataries-net:
         ipv4_address: 192.168.99.12
+  git-server:
+    image: gitea
+    container_name: git-server
+    hostname: git-server
+    environment:
+     - ENV SERVICE_NAME=git-server
+     - ENV USER_UID=1000
+     - ENV USER_GID=1000
+     - ENV APP_NAME="Git Server"
+     - ENV HTTP_PORT=3000
+     - ENV DB_TYPE=postgres
+     - ENV DB_HOST=postgresql-server:5432
+     - ENV DB_NAME=gitea
+     - ENV DB_USER=gitea
+     - ENV DB_PASSWD=gitea
+     - ENV SSH_DOMAIN=git-server
+     - ENV INSTALL_LOCK=true
+    volumes:
+      - ./dataries-gitea/app.ini:/data/gitea/conf/app.ini
+    restart: on-failure
+    extra_hosts: ["postgresql-server:192.168.200.2"]
+    ports: ["127.0.0.1:2222:22", "3000:3000"]
+    expose: ["3000"]
+    networks:
+      cloud-net:
+        ipv4_address: 192.168.99.13
+    depends_on:
+      - postgresql
 ```
 
 `compose 2`
