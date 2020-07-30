@@ -20,14 +20,14 @@ Dataries can be deployed in a distributed way in different clouds or on local se
 
 Dataries is now an open source product, to encourage the contribution and collaboration of other developers. For this we have used GitHub and Docker Hub. Here is a list of all our docker images that you can download from our `gsiopen` organization: 
 
-- gsiopen/hadoop
-- gsiopen/config-server
-- gsiopen/schema-registry
-- gsiopen/eureka
-- gsiopen/zuul-server
-- gsiopen/zookeeper
-- gsiopen/pulsar
-- gsiopen/zuul-client
+- [gsiopen/hadoop](https://hub.docker.com/repository/docker/gsiopen/hadoop)
+- [gsiopen/config-server](https://hub.docker.com/repository/docker/gsiopen/config-server)
+- [gsiopen/schema-registry](https://hub.docker.com/repository/docker/gsiopen/schema-registry)
+- [gsiopen/eureka](https://hub.docker.com/repository/docker/gsiopen/eureka)
+- [gsiopen/zuul-server](https://hub.docker.com/repository/docker/gsiopen/zuul-server)
+- [gsiopen/zookeeper](https://hub.docker.com/repository/docker/gsiopen/zookeeper)
+- [gsiopen/pulsar](https://hub.docker.com/repository/docker/gsiopen/pulsar)
+- [gsiopen/zuul-client](https://hub.docker.com/repository/docker/gsiopen/zuul-client)
 
 Each of this docker image brings with it the necessary documentation to put it to work independently, however, to start Dataries, other configurations are needed.
 
@@ -35,7 +35,7 @@ Each of this docker image brings with it the necessary documentation to put it t
 
 Dataries can be deployed by using these docker compose:
 
-compose 1
+`compose 1`
 
 ```
 version: "3.7"
@@ -67,7 +67,7 @@ services:
         ipv4_address: 192.168.99.12
 ```
 
-compose 2
+`compose 2`
 
 ```
 ```
