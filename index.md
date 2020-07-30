@@ -8,7 +8,7 @@ Dataries has a component-based architecture where its own developments are inter
 
 These components allow the management and configuration of data flows, the management of the traces of all the components of the system, the check of the availability of the elements of the system, as well as the storage and distributed processing of the information.
 
-![dataries architecture](./docs/img/0.png)
+![architecture](./docs/img/0.png)
 
 ## Dataries deployment
 
