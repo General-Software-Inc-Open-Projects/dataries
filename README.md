@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# DATARIES
 
-You can use the [editor on GitHub](https://github.com/General-Software-Inc-Open-Projects/dataries1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Dataries is a product that allows the ingestion, processing, analysis and visualization of large volumes of data from different sources.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Dataries architecture 
 
-### Markdown
+Dataries has a component-based architecture where its own developments are interrelated with established and recognized technologies in the big data field.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+These components allow the management and configuration of data flows, the management of the traces of all the components of the system, the check of the availability of the elements of the system, as well as the storage and distributed processing of the information.
 
-```markdown
-Syntax highlighted code block
+![dataries architecture](./docs/img/0.png)
 
-# Header 1
-## Header 2
-### Header 3
+## Dataries deployment
 
-- Bulleted
-- List
+Dataries can be deployed in a distributed way in different clouds or on local servers since its deployment is based on Docker containers
 
-1. Numbered
-2. List
+![dataries distributed deployment](./docs/img/1.png)
 
-**Bold** and _Italic_ and `Code` text
+## Dataries open source
 
-[Link](url) and ![Image](src)
-```
+Dataries is now an open source product, to encourage the contribution and collaboration of other developers. For this we have used gitHub and Docker hub.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+-
+-
+-
+-
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/General-Software-Inc-Open-Projects/dataries1/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### How to connect Dataries
