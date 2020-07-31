@@ -60,7 +60,6 @@ services:
     volumes:
       - ./dataries-postgresql:/docker-entrypoint-initdb.d
     restart: on-failure
-    ports: ["5432:5432"]
     expose: ["5432"]
     networks:
       dataries-net:
@@ -76,7 +75,7 @@ services:
      - ENV APP_NAME="Git Server"
      - ENV HTTP_PORT=3000
      - ENV DB_TYPE=postgres
-     - ENV DB_HOST=postgresql-server:5432
+     - ENV DB_HOST=postgresql:5432
      - ENV DB_NAME=gitea
      - ENV DB_USER=gitea
      - ENV DB_PASSWD=gitea
@@ -85,11 +84,10 @@ services:
     volumes:
       - ./dataries-gitea/app.ini:/data/gitea/conf/app.ini
     restart: on-failure
-    extra_hosts: ["postgresql-server:192.168.200.2"]
+    extra_hosts: ["postgresql-server:192.168.99.12"]
     ports: ["127.0.0.1:2222:22", "3000:3000"]
-    expose: ["3000"]
     networks:
-      cloud-net:
+      dataries-net:
         ipv4_address: 192.168.99.13
     depends_on:
       - postgresql
