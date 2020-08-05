@@ -10170,5 +10170,5 @@ header.masthead h1 {
 }
 
 .contactd{
-  position-: 33.5%;
+  position: 33.5% !important;
 }
