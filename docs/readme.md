@@ -47,8 +47,8 @@ Dataries can be deployed by using these docker-compose files:
 1. [docker-compose 1](./docker-compose/docker-compose.yml)
 2. [docker-compose 2](./docker-compose/docker-compose2.yml)
 
-> You should pay attention that you must replace the users and passwords with your own for each service in the docker-compose files
+> You should pay attention that you must replace the users and passwords with your own for each service in the docker-compose files.
 
-Dataries supports the creation of a private docker-registry if the images are personalized. Dataries is the base for making custom products like new Data products, or for using other components on a functional deployment
+Dataries supports the creation of a private docker-registry if the images are personalized. Dataries is the base for making custom products like new Data products, or for using other components on a functional deployment.
 
 It is necessary to mention that components such as Kerberos would improve the security of the Dataries deployment, although it has not been included in this example of deployment, the inclusion of a Kerberos docker image in productive environments is recommended.
