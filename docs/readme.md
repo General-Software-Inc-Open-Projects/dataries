@@ -27,7 +27,7 @@ Dataries has a cluster control plane that contains the launch scripts and provid
 
 ## Dataries open source
 
-Dataries is now an open source product, to encourage the contribution and collaboration of other developers. For this we have used GitHub and Docker Hub. Here is a list of all our docker images and their documentation, that you can download from our `gsiopen` organization: 
+Dataries is now an open source product, to encourage the contribution and collaboration of other developers. For this we have used GitHub and Docker Hub. Here is a list of all our docker images and their documentation, that you can download from our `gsiopen` organization:
 
 - [gsiopen/hadoop](https://hub.docker.com/repository/docker/gsiopen/hadoop)
 - [gsiopen/config-server](https://hub.docker.com/repository/docker/gsiopen/config-server)
